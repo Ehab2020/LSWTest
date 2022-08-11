@@ -41,6 +41,7 @@ namespace LSW.UI
         {
             shopWindow.SetActive(true);
             RefreshShopInventory();
+            
 
             playerGold.text = player.GetComponent<PlayerController>().gold.ToString();
             foreach (var shopItem in shopItems)
@@ -57,6 +58,8 @@ namespace LSW.UI
 
                 itemBtn.GetComponent<Button>().onClick.AddListener(delegate { Trade(shopItem.itemName, shopItem.buyPrice, "Buy"); });
             }
+
+            RefreshShop();
         }
 
         // Close Shop UI
@@ -103,7 +106,7 @@ namespace LSW.UI
         // Refreshes Shop UI's sold items (Enable/Disable buying items)
         public void RefreshShop()
         {
-            int goldAmount = int.Parse(playerGold.text);
+            int goldAmount = player.GetComponent<PlayerController>().gold;
             foreach (var shopItem in shopItems)
             {
                 bool playerOwnsItem = player.GetComponent<PlayerController>().ownedItems.Contains(shopItem.itemName);
