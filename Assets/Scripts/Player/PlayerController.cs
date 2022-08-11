@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace LSW.Player
 {
@@ -13,11 +11,13 @@ namespace LSW.Player
         private string[] movementStates;
         [SerializeField] 
         private string[] directions;
+        [SerializeField]
+        public GameObject inventory;
 
-        private Animator _anim;
-        private AnimationClip _animationClip;
-        private AnimatorOverrideController _animOverrideController;
-        private AnimationClipOverrides _defaultAnimationClips;
+        private Animator anim;
+        private AnimationClip animationClip;
+        private AnimatorOverrideController animOverrideController;
+        private AnimationClipOverrides defaultAnimationClips;
 
         public List<string> ownedItems = new List<string>();
 
@@ -26,10 +26,8 @@ namespace LSW.Player
         public string equipedShoes = "Shoes_0";
 
         public int gold = 1000;
-        public GameObject inventory;
-        public GameObject inventoryItemPrefab;
 
-        public IInputHandler _inputHandler;
+        public IInputHandler inputHandler;
 
         public delegate void OnNPCInteract();
         public static OnNPCInteract onNPCInteract;
@@ -37,21 +35,22 @@ namespace LSW.Player
         // Start is called before the first frame update
         void Start()
         {
-            if (_inputHandler == null)
-                _inputHandler = new InputHandler();
+            if (inputHandler == null)
+                inputHandler = new InputHandler();
 
-            _anim = GetComponent<Animator>();
-            _animOverrideController = new AnimatorOverrideController(_anim.runtimeAnimatorController);
-            _anim.runtimeAnimatorController = _animOverrideController;
+            anim = GetComponent<Animator>();
+            animOverrideController = new AnimatorOverrideController(anim.runtimeAnimatorController);
+            anim.runtimeAnimatorController = animOverrideController;
 
-            _defaultAnimationClips = new AnimationClipOverrides(_animOverrideController.overridesCount);
-            _animOverrideController.GetOverrides(_defaultAnimationClips);
+            defaultAnimationClips = new AnimationClipOverrides(animOverrideController.overridesCount);
+            animOverrideController.GetOverrides(defaultAnimationClips);
 
             ownedItems.Add("Shirt_0");
             ownedItems.Add("Pants_0");
             ownedItems.Add("Shoes_0");
 
             UI.ShopHandler.onTrade += UpdateOwnedItems;
+            UI.InventoryHandler.onEquipItem += UpdateOutfit;
         }
 
         // Update is called once per frame
@@ -67,19 +66,19 @@ namespace LSW.Player
 
         void HandleMovement()
         {
-            float vert = _inputHandler.GetVerticalAxis();
-            float horiz = _inputHandler.GetHorizontalAxis();
+            float vert = inputHandler.GetVerticalAxis();
+            float horiz = inputHandler.GetHorizontalAxis();
 
             transform.position += new Vector3(horiz, vert, 0) 
-                * _inputHandler.GetDeltaTime() * movementSpeed;
+                * inputHandler.GetDeltaTime() * movementSpeed;
 
-            _anim.SetFloat("Vert", vert);
-            _anim.SetFloat("Horiz", horiz);
+            anim.SetFloat("Vert", vert);
+            anim.SetFloat("Horiz", horiz);
 
             if(vert == 1 || vert == -1 || horiz == 1 || horiz == -1)
             {
-                _anim.SetFloat("LastVert", vert);
-                _anim.SetFloat("LastHoriz", horiz);
+                anim.SetFloat("LastVert", vert);
+                anim.SetFloat("LastHoriz", horiz);
             }
         }
 
@@ -126,54 +125,13 @@ namespace LSW.Player
                 {
                     string direction = directions[directionIndex];
 
-                    _animationClip = Resources.Load<AnimationClip>("Animations/" + itemType + "/" + itemName + "/" + itemName + "_" + state + "_" + direction);
+                    animationClip = Resources.Load<AnimationClip>("Animations/" + itemType + "/" + itemName + "/" + itemName + "_" + state + "_" + direction);
 
-                    _defaultAnimationClips[itemType + "_0_" + state + "_" + direction] = _animationClip;
+                    defaultAnimationClips[itemType + "_0_" + state + "_" + direction] = animationClip;
                 }
             }
 
-            _animOverrideController.ApplyOverrides(_defaultAnimationClips);
-        }
-
-        public void ControlInventory()
-        {
-            if (inventory.activeSelf)
-            {
-                CloseInventory();
-            }
-            else
-            {
-                ShowInventory();
-            }
-        }
-        public void ShowInventory()
-        {
-            inventory.SetActive(true);
-            ClearInventory();
-            
-            for(int i = 0; i < ownedItems.Count; i++)
-            {
-                string itemName = ownedItems[i];
-                Sprite spr = Resources.Load<Sprite>("ItemsImages/" + itemName);
-                inventory.transform.GetChild(i).GetChild(0).GetComponent<Image>().enabled = true;
-                inventory.transform.GetChild(i).GetChild(0).GetComponent<Image>().sprite = spr;
-
-                inventory.transform.GetChild(i).GetComponent<Button>().onClick.AddListener(delegate { UpdateOutfit(itemName); });
-            }
-        }
-
-        public void ClearInventory()
-        {
-            foreach (Transform item in inventory.transform)
-            {
-                item.GetChild(0).GetComponent<Image>().enabled = false;
-                item.GetComponent<Button>().onClick.RemoveAllListeners();
-            }
-        }
-
-        public void CloseInventory()
-        {
-            inventory.SetActive(false);
+            animOverrideController.ApplyOverrides(defaultAnimationClips);
         }
     }
     public class AnimationClipOverrides : List<KeyValuePair<AnimationClip, AnimationClip>>

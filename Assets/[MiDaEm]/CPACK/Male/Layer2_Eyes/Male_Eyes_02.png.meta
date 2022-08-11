@@ -78,7 +78,595 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Male_Eyes_02_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 747
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50e8b908e0f6fa429ce1033b37ef4c4
+      internalID: -1101227470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 747
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19f1d7fcb26cc94197dc1ba6b9582ad
+      internalID: 1827447277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 748
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1573908d2cbd946bcea883f9413215
+      internalID: 23016908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 747
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c02f7a52235fa54b872bcc40082e237
+      internalID: 252804049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 747
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d122aa5cd9ac5434282094a9e3652b98
+      internalID: -827887712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_5
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 747
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e43832f9b302048a8e3961d23bb7ef
+      internalID: -1148525374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 748
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba742b9422fc37e45a5d0ed440d41eb2
+      internalID: -1344439784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_7
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 748
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda2d2f85943b754e9e40c2f64a7d174
+      internalID: -993607786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_8
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 747
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5438875f61be4d04e8a2feef69be7fa9
+      internalID: 1933859063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 551
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5e6a2dbfd94184aa331ed9eb7da4af
+      internalID: -2123784746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 551
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449268d36076bbf4a88de09d31740ef9
+      internalID: 1447521107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_11
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 553
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d348f49a35a51c4a913397166586945
+      internalID: 169067966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_12
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 552
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1dbe3cff51739479608ac3d8fea032
+      internalID: 1400450986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_13
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 551
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2509bca1b91a52646939398c9681fa2f
+      internalID: -606145786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_14
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 552
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfeaec8166b80f499ed16ab90d7f48f
+      internalID: -148233859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_15
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 553
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba81aede085217a4da1f70c855573885
+      internalID: -615015389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_16
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 552
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728c5d4a64a94cc46928e56abb8e355e
+      internalID: 2101726712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_17
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 551
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2322d80349b717a4397dc250edc8a665
+      internalID: -14293681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 158
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45296b5d3f1c0444a955da992f97dc40
+      internalID: 141329263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_19
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 158
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450aa3ec3d83c584093f1934a87b82c4
+      internalID: 942609269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 160
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d59e19ee1966ab43b6e4253eb20e7c9
+      internalID: 737874242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_21
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 159
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d73355217b70840b2a326922f60f17
+      internalID: -1021479918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_22
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 158
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e867239ec34e1442b37680684b4402e
+      internalID: 844216418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_23
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 159
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ddd714e18929144ab1e1459eb67981
+      internalID: 2051355609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_24
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 160
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d697dddc254de3848a002100b0fecc35
+      internalID: -1373863488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_25
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 159
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb893761717aa44393dccc1d4b82de6
+      internalID: 1646531807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_26
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 158
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355a9727724e9314789add6428afd83a
+      internalID: -846317335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male_Eyes_02_27
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 610
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ed6fe0304f07b45bd8026214181f0a
+      internalID: 1998247989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +677,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Male_Eyes_02_8: -1344439784
+      Male_Eyes_02_6: -1148525374
+      Male_Eyes_02_7: -1525151501
+      Male_Eyes_02_2: 1827447277
+      Male_Eyes_02_25: 2051355609
+      Male_Eyes_02_23: -1021479918
+      Male_Eyes_02_4: 252804049
+      Male_Eyes_02_19: -14293681
+      Male_Eyes_02_18: 2101726712
+      Male_Eyes_02_0: -575037658
+      Male_Eyes_02_9: -993607786
+      Male_Eyes_02_12: 1447521107
+      Male_Eyes_02_14: 1400450986
+      Male_Eyes_02_21: 942609269
+      Male_Eyes_02_5: -827887712
+      Male_Eyes_02_26: -1373863488
+      Male_Eyes_02_17: -615015389
+      Male_Eyes_02_20: 141329263
+      Male_Eyes_02_15: -606145786
+      Male_Eyes_02_10: 1933859063
+      Male_Eyes_02_16: -148233859
+      Male_Eyes_02_3: 23016908
+      Male_Eyes_02_22: 737874242
+      Male_Eyes_02_24: 844216418
+      Male_Eyes_02_11: -2123784746
+      Male_Eyes_02_13: 169067966
+      Male_Eyes_02_1: -1101227470
+      Male_Eyes_02_27: 1998247989
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

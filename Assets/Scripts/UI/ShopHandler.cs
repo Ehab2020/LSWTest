@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,12 +36,6 @@ namespace LSW.UI
             ShopKeeper.onOpenShop += DisplayShop;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         public void DisplayShop()
         {
             shopWindow.SetActive(true);
@@ -71,6 +63,7 @@ namespace LSW.UI
             shopWindow.SetActive(false);
             onClose();
         }
+
         public void RefreshShopInventory()
         {
             ClearInventory();
