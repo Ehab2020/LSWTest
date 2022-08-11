@@ -28,11 +28,14 @@ namespace LSW.UI
         public delegate void OnTrade(string itemName, int amount, string operation);
         public static OnTrade onTrade;
 
+        public delegate void OnClose();
+        public static OnClose onClose;
+
         // Start is called before the first frame update
         void Start()
         {
             player = GameObject.FindGameObjectWithTag("Player");
-            DisplayShop();
+            ShopKeeper.onOpenShop += DisplayShop;
         }
 
         // Update is called once per frame
@@ -43,6 +46,9 @@ namespace LSW.UI
 
         public void DisplayShop()
         {
+            shopWindow.SetActive(true);
+            RefreshShopInventory();
+
             playerGold.text = player.GetComponent<PlayerController>().gold.ToString();
             foreach (var shopItem in shopItems)
             {
@@ -63,6 +69,7 @@ namespace LSW.UI
         public void CloseShop()
         {
             shopWindow.SetActive(false);
+            onClose();
         }
         public void RefreshShopInventory()
         {

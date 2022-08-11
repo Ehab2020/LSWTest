@@ -31,6 +31,9 @@ namespace LSW.Player
 
         public IInputHandler _inputHandler;
 
+        public delegate void OnNPCInteract();
+        public static OnNPCInteract onNPCInteract;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -56,10 +59,10 @@ namespace LSW.Player
         {
             HandleMovement();
 
-            /*if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.T))
             {
-                ownedItems.Remove("Shirt_1");
-            }*/
+                onNPCInteract();
+            }
         }
 
         void HandleMovement()
