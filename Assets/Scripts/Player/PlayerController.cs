@@ -82,6 +82,7 @@ namespace LSW.Player
             }
         }
 
+        // Update Player's owned items
         public void UpdateOwnedItems(string itemName, int amount, string operation)
         {
             if (operation == "Buy")
@@ -100,6 +101,7 @@ namespace LSW.Player
             } 
         }
 
+        // Update player outfit and animations with the new item
         public void UpdateOutfit(string itemName)
         {
             int itemIndex = itemName.IndexOf("_");
@@ -134,6 +136,7 @@ namespace LSW.Player
             animOverrideController.ApplyOverrides(defaultAnimationClips);
         }
     }
+
     public class AnimationClipOverrides : List<KeyValuePair<AnimationClip, AnimationClip>>
     {
         public AnimationClipOverrides(int capacity) : base(capacity) { }

@@ -36,6 +36,7 @@ namespace LSW.UI
             ShopKeeper.onOpenShop += DisplayShop;
         }
 
+        // Dispaly Shop UI
         public void DisplayShop()
         {
             shopWindow.SetActive(true);
@@ -58,12 +59,14 @@ namespace LSW.UI
             }
         }
 
+        // Close Shop UI
         public void CloseShop()
         {
             shopWindow.SetActive(false);
             onClose();
         }
 
+        // Refresh Shop UI when Player's ownedItems change
         public void RefreshShopInventory()
         {
             ClearInventory();
@@ -80,6 +83,7 @@ namespace LSW.UI
             }
         }
 
+        // Handles Buying/Selling Operations
         public void Trade(string itemName, int itemPrice, string operation)
         {
             if (itemName == player.GetComponent<PlayerController>().equipedShirt ||
@@ -96,6 +100,7 @@ namespace LSW.UI
             RefreshShopInventory();
         }
 
+        // Refreshes Shop UI's sold items (Enable/Disable buying items)
         public void RefreshShop()
         {
             int goldAmount = int.Parse(playerGold.text);
@@ -107,6 +112,7 @@ namespace LSW.UI
             }
         }
 
+        // Remove images and button events from inventory elements
         public void ClearInventory()
         {
             foreach(Transform item in shopInventory.transform)
@@ -116,11 +122,13 @@ namespace LSW.UI
             }
         }
 
+        // Display cannot sell equipped items panel
         public void ShowEquippedItemsPrompt()
         {
             equippedItemsPrompt.SetActive(true);
         }
 
+        // Hides cannot sell equipped items panel
         public void HideEquippedItemsPrompt()
         {
             equippedItemsPrompt.SetActive(false);

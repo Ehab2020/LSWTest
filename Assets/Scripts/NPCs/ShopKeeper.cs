@@ -60,6 +60,7 @@ public class ShopKeeper : MonoBehaviour
         }
     }
 
+    // Change AI direction and animation
     void ChangeDestination()
     {
         if (waypointIndex >= waypoints.Length - 1)
@@ -74,6 +75,7 @@ public class ShopKeeper : MonoBehaviour
         }
     }
 
+    // Trigger shop UI
     void InteractWithPlayer()
     {
         if (Vector3.Distance(transform.position, player.transform.position) >= 1.8f) return;
@@ -81,6 +83,7 @@ public class ShopKeeper : MonoBehaviour
         onOpenShop();
     }
 
+    // Set NPC back to roaming around
     void StopInteraction()
     {
         isTalkingToPlayer = false;
