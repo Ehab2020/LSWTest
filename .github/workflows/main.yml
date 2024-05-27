@@ -20,7 +20,6 @@ jobs:
                 UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
               with:
                 customImage: 'unityci/base:ubuntu-latest'
-                projectPath: f1-companion-app
                 targetPlatform: StandaloneWindows64
             - name: Upload Artifact
               uses: actions/upload-artifact@v3
