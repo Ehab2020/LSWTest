@@ -19,7 +19,6 @@ jobs:
                 UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
                 UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
               with:
-                customImage: 'unityci/base:ubuntu-latest'
                 targetPlatform: StandaloneWindows64
             - name: Upload Artifact
               uses: actions/upload-artifact@v3
